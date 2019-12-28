@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<meta charset="utf-8">
+		<title>My first three.js app</title>
+		<style>
+			body { 
+				margin: 0;
+				overflow: hidden;
+			}
+			canvas { 
+				overflow: hidden;
+				width: 100%; height: 100%;
+				background:url("wall.jpg");
+				background-size:cover;
+				background-repeat: no-repeat;
+			}
+			h1{
+				position:absolute;
+				min-height: 10vh;
+				width: 25vw;
+				top:10%;
+				left:5%;
+				font-size:40px;
+				color:black;
+				border: 2px solid black;
+				padding:10px;
+				margin:0px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 id="text">This is my first Three.js Project</h1>
+		<audio id="hit1" preload="auto">
+			<source src="hit_09.wav" type="audio/wav">
+		</audio>	
+		<audio id="jump1" preload="auto">
+			<source src="jump_16.wav" type="audio/wav">
+		</audio>
+		<audio id="hit2" preload="auto">
+			<source src="hit_11.wav" type="audio/wav">
+		</audio>
+		<audio id="points1" preload="auto">
+				<source src="coin_02.wav" type="audio/wav">
+			</audio>
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+        <!--<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>-->
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.6/dat.gui.js"></script>-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/102/three.js"></script>
+		<script src="Physijs/physi.js"></script>
+		<script src="js/game.js" type ="module">
+			// Our Javascript will go here.
+		</script>
+	</body>
+</html>
